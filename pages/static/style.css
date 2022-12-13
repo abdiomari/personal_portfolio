@@ -1,0 +1,127 @@
+/* curved background */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+#curved
+{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* border: 1px #000000 solid; */
+
+}
+#curved:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e7b3b3;
+    border-radius: 100% 50%;
+    transform: translate(45%, 15%);
+    z-index: -1;
+}
+
+#curved:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e49696d2;
+    border-radius: 100% 50%;
+    transform: translate(55%, 25%);
+}
+
+
+
+#curved .content{
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#curved .content h2{
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 3em;
+}
+
+#curved .content p{
+  
+    color: #000000;
+    font-size: 1.32em;
+}
+
+.landing-section{
+    min-height:100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .landing-main { 
+    background: url(https://images.unsplash.com/photo-1460667262436-cf19894f4774) no-repeat center center fixed; 
+    background-size: cover;
+  } */
+
+.landing-section-content {
+    padding: 2rem;
+    background: rgba(0,0,0,0.5);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ccc;
+  }
+  
+.brand {
+    margin: 0;
+    color: #c55e00;
+  }
+  
+.brand-text {
+    color: #c55e00;
+  }
+
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 2% 0 0 4%;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+.header-link {
+    margin: 1rem;
+    border-bottom: 3px solid #ec8a8a;
+    font-size: 1.2rem;
+    color: #000000;
+    text-decoration: none;
+
+  }
+
+.header-text {
+    margin: 1rem;
+    font-size: 2.2rem;
+    color: rgb(0, 0, 0);
+  }
