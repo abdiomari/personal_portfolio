@@ -1,3 +1,2 @@
-# personal_portfolio 
-this is an entry level skeleton django based website with a few functionalities 
-it is a blog page as well as a showcase portfolio site
+# Bonita makeup shop website
+This is an ecommerce app for a makeup products based business made using python 
